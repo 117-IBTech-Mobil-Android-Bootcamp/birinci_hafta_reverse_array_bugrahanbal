@@ -1,0 +1,27 @@
+package com.balbugrahan.ibtech
+
+import android.util.Log
+
+class FirstProject {
+
+    fun Array<Int>.reverse(index:Int): Array<Int> {
+
+        var index = index
+
+        try {
+            var lastPosition = this.size - 1
+            var temp: Int
+            while (lastPosition > index) {
+                temp = this[index]
+                this[index] = this[lastPosition]
+                this[lastPosition] = temp
+                index++
+                lastPosition--
+            }
+        }
+        catch (e: ArrayIndexOutOfBoundsException){
+            if(index<0) Log.e("index>0","index should be greater than 0")}
+        return this
+    }
+
+}
