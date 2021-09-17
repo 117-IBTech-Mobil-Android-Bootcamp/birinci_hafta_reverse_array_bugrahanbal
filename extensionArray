@@ -4,7 +4,7 @@ import android.util.Log
 
 class FirstProject {
 
-    fun Array<Int>.reverse(index:Int): Array<Int> {
+    fun MutableList<Int>.reverse(index:Int): MutableList<Int> {
 
         var index = index
 
